@@ -24,6 +24,7 @@ table{
     height: 40px;
     border-radius: 20px;
     cursor: pointer;
+    font-size: larger;
 }
 
 input{
@@ -31,6 +32,7 @@ input{
     width: 320px;
     border-radius: 20px;
     height: 35px;
+    font-size: larger;
 }
 body{
     background-color:rgb(44, 61, 61) ;

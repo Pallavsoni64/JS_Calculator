@@ -1,4 +1,4 @@
-let screen = document.querySelector('#screen');
+let screen = document.querySelector('#input');
 let buttons = document.querySelectorAll('button');
 let screenValue = '';
 for (item of buttons) {
@@ -12,9 +12,15 @@ for (item of buttons) {
             screen.value = eval(screenValue);
         }
         else if (buttonText == '🔙'){
-            buttonText = screenValue;
             screenValue = screenValue.slice(0, -1);
+            buttonText = screenValue;
             screen.value = buttonText;
+        }
+        else if(buttonText/0 == true){
+            screen.value = 'Infinity'
+        }
+        else if(0/0 == true){
+            screen.value = 'Nan'
         }
         else{
             screenValue += buttonText;
